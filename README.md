@@ -1,0 +1,2 @@
+# event_template_django
+event_template_django
