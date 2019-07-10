@@ -12,3 +12,6 @@ class Speaker(models.Model):
     date_and_time = models.CharField(max_length=300)
     talk_location = models.CharField(max_length=300)
     talk_title = models.CharField(max_length=300)
+
+    # def __str__(self):
+        # return name
