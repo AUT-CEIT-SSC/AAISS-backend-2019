@@ -21,7 +21,7 @@ from rest_framework import routers
 from ai_talks import views
 
 router = routers.DefaultRouter()
-router.register(r'speakers', views.SpeakerViewSet)
+router.register(r'api/speakers', views.SpeakerViewSet)
 
 
 # Wire up our API using automatic URL routing.
@@ -29,5 +29,5 @@ router.register(r'speakers', views.SpeakerViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('admin/', admin.site.urls)
+    path('api/admin/', admin.site.urls)
 ]
