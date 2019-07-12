@@ -15,3 +15,8 @@ class Speaker(models.Model):
 
     # def __str__(self):
         # return name
+
+
+class Staff(models.Model):
+    name = models.CharField(max_length=300)
+    image_path = models.CharField(max_length=300)
