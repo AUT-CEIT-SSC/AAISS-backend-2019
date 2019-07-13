@@ -25,6 +25,7 @@ class Staff(models.Model):
 class ScientificCommittee(models.Model):
     name = models.CharField(max_length=300)
     position = models.CharField(max_length=300)
+    rule = models.CharField(max_length=300)
 
 
 class StaticParts(models.Model):
