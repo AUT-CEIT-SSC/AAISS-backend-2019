@@ -133,7 +133,7 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = "/var/www/aaiss.ceit.aut.ac.ir/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-}
+#REST_FRAMEWORK = {
+#    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#    'PAGE_SIZE': 10
+#}
