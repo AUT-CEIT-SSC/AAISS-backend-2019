@@ -26,6 +26,7 @@ class ScientificCommittee(models.Model):
     name = models.CharField(max_length=300)
     position = models.CharField(max_length=300)
     rule = models.CharField(max_length=300)
+    image_path = models.CharField(max_length=1000)
 
 
 class StaticParts(models.Model):
