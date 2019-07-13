@@ -20,3 +20,13 @@ class Speaker(models.Model):
 class Staff(models.Model):
     name = models.CharField(max_length=300)
     image_path = models.CharField(max_length=300)
+
+
+class ScientificCommittee(models.Model):
+    name = models.CharField(max_length=300)
+    position = models.CharField(max_length=300)
+
+
+class StaticParts(models.Model):
+    about = models.TextField()
+    register_link = models.CharField(max_length=1000)

@@ -23,6 +23,9 @@ from ai_talks import views
 router = routers.DefaultRouter()
 router.register(r'api/speakers', views.SpeakerViewSet)
 router.register(r'api/staff', views.StaffViewSet)
+router.register(r'api/scientific_committee', views.ScientificCommitteeViewSet)
+router.register(r'api/static_parts', views.StaticPartsViewSet)
+
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
