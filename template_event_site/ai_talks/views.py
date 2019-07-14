@@ -10,7 +10,7 @@ class SpeakerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows speakers to be viewed or edited.
     """
-    queryset = Speaker.objects.all()
+    queryset = Speaker.objects.all().order_by('sort')
     serializer_class = SpeakerSerializer
 
 
