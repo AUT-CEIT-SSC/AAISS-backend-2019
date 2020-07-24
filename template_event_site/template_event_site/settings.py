@@ -25,7 +25,7 @@ SECRET_KEY = '7a-n#fiq(ke*x8k5s=^ki)mhfna$)jw0xjxs^r4dai0s1x8*1n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aaiss.ceit.aut.ac.ir','127.0.0.1','0.0.0.0']
+ALLOWED_HOSTS = ['aaiss.ceit.aut.ac.ir','127.0.0.1','0.0.0.0', 'localhost']
 
 
 # Application definition
@@ -55,6 +55,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'template_event_site.urls'
+APPEND_SLASH = False
 
 CORS_ORIGIN_ALLOW_ALL = True
 

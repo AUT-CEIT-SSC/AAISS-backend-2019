@@ -17,10 +17,17 @@ Including another URLconf
 
 from django.urls import include, path
 from django.contrib import admin
-from rest_framework import routers
+from rest_framework.routers import DefaultRouter
 from ai_talks import views
 
-router = routers.DefaultRouter()
+
+class OptionalSlashRouter(DefaultRouter):
+    def __init__(self, *args, **kwargs):
+        super(DefaultRouter, self).__init__(*args, **kwargs)
+        self.trailing_slash = '/?'
+
+
+router = OptionalSlashRouter()
 router.register(r'api/speakers', views.SpeakerViewSet)
 router.register(r'api/staff', views.StaffViewSet)
 router.register(r'api/scientific_committee', views.ScientificCommitteeViewSet)
